@@ -1,0 +1,39 @@
+---
+import RedesSociales from "./RedesSociales.astro"
+---
+
+<section class="inicio h-[92vh]">
+  <h1 class="hidden">One Invitaciones</h1>
+  <video autoplay loop playsinline muted class="object-cover h-[92vh] absolute" width="100%">
+    <source src="assets/videos/Invitaciones startup.mp4" type="video/mp4">
+  </video>
+
+  <div
+    class="absolute z-0 top-5 md:top-16 block md:flex gap-5 left-1/2 text-center translate-y-[15%] md:translate-y-52 translate-x-[-50%] items-center w-[94%] md:w-[80%]">
+    <div class="todo rounded-lg px-5 py-10 flex flex-col items-center gap-4"
+      style="background-color: rgb(30 41 59 / 70%);">
+      <img src="assets/LOGO ONE INVITACIONES.png" width="280" height="157" alt="Logo One Invitaciones">
+      <h1 class="text-xl text-white">¡Sorprende a tus invitados desde el primer clic!</h1>
+      <div class="btn-action flex gap-5">
+        <a href="/inicio/catalogo"
+          class=" p-5 rounded-lg font-medium bg-slate-800 text-[#ffcba7] hover:bg-[#ffcba7] hover:text-slate-800 transition duration-300">VER
+          CATALOGO</a>
+        <a href="https://wa.me/3319040340?text=Hola,%20estoy%20interesado%20en%20contratar%20sus%20servicios." target="_blank"
+          class="p-5 rounded-lg font-medium bg-slate-800 text-[#ffcba7] hover:bg-[#ffcba7] hover:text-slate-800 transition duration-300">CONTRATAR
+          AHORA</a>
+      </div>
+
+      <RedesSociales/>
+
+    </div>
+
+    <div class="copy mt-2">
+      <p class="animate__animated animate__backInLeft animate__delay-1s rounded-lg font-medium text-slate-800 md:text-white mb-3 bg-[#ffcba7] p-4 md:bg-transparent md:p-0 md:text-5xl"
+        style="text-shadow: #ffcba7 1px 1px 20px;">
+        Da vida a tus eventos con nuestras innovadoras <span class="text-white md:text-[#ffcba7]"
+          style="text-shadow: #000000 1px 1px 20px;">invitaciones digitales, </span><span class="text-slate-800"
+          style="text-shadow: #ffffff 1px 1px 20px;">diseñadas para impresionar.</span></p>
+    </div>
+  </div>
+
+</section>

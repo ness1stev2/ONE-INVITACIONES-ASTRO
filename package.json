@@ -1,0 +1,33 @@
+{
+  "name": "one-invitaciones",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@analogjs/astro-angular": "^1.4.0",
+    "@angular-devkit/build-angular": "^18.0.2",
+    "@angular/animations": "^18.0.2",
+    "@angular/common": "^18.0.2",
+    "@angular/compiler": "^18.0.2",
+    "@angular/compiler-cli": "^18.0.2",
+    "@angular/core": "^18.0.2",
+    "@angular/language-service": "^18.0.2",
+    "@angular/platform-browser": "^18.0.2",
+    "@angular/platform-browser-dynamic": "^18.0.2",
+    "@angular/platform-server": "^18.0.2",
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.9.3",
+    "rxjs": "^7.8.1",
+    "tailwindcss": "^3.4.4",
+    "tslib": "^2.6.3",
+    "typescript": "^5.4.5",
+    "zone.js": "^0.14.6"
+  }
+}

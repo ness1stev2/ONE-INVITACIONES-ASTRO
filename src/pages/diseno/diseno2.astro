@@ -1,0 +1,84 @@
+---
+import LayoutDiseno from "../../layouts/LayoutDiseno.astro";
+
+---
+
+<script>
+
+// Crear una instancia de IntersectionObserver
+const observer = new IntersectionObserver(entries => {
+  // Loop a través de todas las entradas
+  entries.forEach(entry => {
+    // Si el elemento está en el viewport
+    if (entry.isIntersecting) {
+      // Agrega una animación
+      entry.target.classList.add('animate__animated');
+    } else {
+      // Quita la animación cuando el elemento sale del viewport
+      entry.target.classList.remove('animate__animated');
+    }
+  });
+});
+
+// Seleccionar todos los elementos con la clase 'viewport'
+const elements = document.querySelectorAll('.viewport');
+
+// Comenzar a observar cada elemento
+elements.forEach(element => observer.observe(element));
+
+</script>
+
+<LayoutDiseno title="Invitacion Lucia">
+  <div class="relative h-screen">
+    <div
+      class="absolute inset-0 bg-[url('/assets/disenos/lucia/invitacionLucia.png')] bg-center bg-cover"
+      style="clip-path: polygon(0 0, 0 100vh, 80% 0);"
+    ></div>
+    <div class="flex flex-row z-10 relative">
+      <div class="basis-1/4"></div>
+      <div class="basis-3/4">
+        <div class="flex flex-col h-screen justify-center gap-6">
+          <img src="/assets/disenos/lucia/fecha.png" class="w-[50%] ml-auto viewport animate__backInLeft" alt="fecha" />
+          <img src="/assets/disenos/lucia/titulo.png" class="w-[80%] ml-auto" alt="titulo" />
+          <p class="font-serif text-xl text-center mt-20">Con alegría en nuestros corazones, te invitamos a compartir la bendición de la Primera Comunión de Ana Lucia.
+            Únete a nosotros en este momento especial de fe, amor y gratitud hacia Dios.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-row gap-16">
+    <div class="basis-1/2 px-16">
+      <div class="flex flex-col justify-center">
+        <img src="/assets/disenos/lucia/iglesia.png" alt="">
+        <hr>
+        <p>misa</p>
+        <hr>
+        <h2>La Crucifixión del Señor</h2>
+        <img src="/assets/disenos/lucia/reloj.png" alt="">
+        <hr>
+        <p>horario</p>
+        <hr>
+        <p>12:oo</p>
+        <button>¿Cómo llegar?</button>
+
+      </div>
+    </div>
+  <div class="basis-1/2 px-16">
+      <div class="flex flex-col justify-center">
+        <img src="/assets/disenos/lucia/dance.png" alt="">
+        <hr>
+        <p>misa</p>
+        <hr>
+        <h2>La Crucifixión del Señor</h2>
+        <img src="/assets/disenos/lucia/reloj.png" alt="">
+        <hr>
+        <p>horario</p>
+        <hr>
+        <p>12:oo</p>
+        <button class="viewport animate__backInLeft">¿Cómo llegar?</button>
+
+      </div>
+    </div>
+  </div>
+</LayoutDiseno>
