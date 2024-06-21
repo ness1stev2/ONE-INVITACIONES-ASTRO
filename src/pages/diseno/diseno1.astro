@@ -1,13 +1,11 @@
 ---
 import LayoutDiseno from "../../layouts/LayoutDiseno.astro";
+import FechaTime from "./components/fecha-time.astro";
 import { FechaTimeComponent } from "./components/fecha-time.component";
 ---
 
 <LayoutDiseno title="Diseño 1">
-  <div
-
-    style="background-image: url('/assets/disenos/diseno1/d1-bg.png');"
-  >
+  <div style="background-image: url('/assets/disenos/diseno1/d1-bg.png');">
     <div class="inicio relative">
       <video
         autoplay
@@ -79,7 +77,6 @@ import { FechaTimeComponent } from "./components/fecha-time.component";
               class="rounded-full w-28"
               src="/assets/disenos/diseno1/padres1.png"
               alt=""
-
             />
             <strong class="text-3xl">Padres del novio</strong>
             <p class="text-2xl text-center text-[#1E293B]">Juan y Maria</p>
@@ -92,7 +89,6 @@ import { FechaTimeComponent } from "./components/fecha-time.component";
               class="rounded-full w-28"
               src="/assets/disenos/diseno1/padres2.png"
               alt=""
-
             />
             <strong class="text-3xl">Padres de la novia</strong>
             <p class="text-2xl text-center text-[#1E293B]">Pedro y Ana</p>
@@ -101,14 +97,39 @@ import { FechaTimeComponent } from "./components/fecha-time.component";
       </div>
     </div>
 
-    <FechaTimeComponent/>
+    <div
+      class="fecha-timer bg-cover my-10 rounded-3xl w-11/12 mx-auto"
+      style="background-image: url('/assets/disenos/diseno1/tiempo.png');"
+    >
+      <div class="flex flex-col items-center justify-center gap-10 p-5 py-10">
+        <strong class="text-4xl font-bold sm:text-5xl text-center">1</strong>
+        <p class="text-4xl font-normal">Faltan</p>
 
+        <div class="flex flex-wrap justify-evenly gap-6">
+          <div class="">
+            <div
+              class="flex flex-col items-center justify-center rounded-full bg-[#FFCBA7] text-white p-5"
+            >
+              <p class="font-bold text-3xl"><!-- {{ item.numero }} --></p>
+              <p class="text-center font-bold text-white">
+                <!-- {{item.titulo}} -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="ceremonia flex flex-col items-center justify-center py-20 gap-5 overflow-hidden">
-
+    <div
+      class="ceremonia flex flex-col items-center justify-center py-20 gap-5 overflow-hidden"
+    >
       <h2 class="text-5xl text-[#88A0A8]">Ceremonia</h2>
       <div class="flex flex-col justify-center items-center gap-3">
-        <img class="reloj w-28" src="/assets/disenos/diseno1/reloj.svg" alt="reloj">
+        <img
+          class="reloj w-28"
+          src="/assets/disenos/diseno1/reloj.svg"
+          alt="reloj"
+        />
         <strong class="text-center text-2xl">infoCeremonia.hora</strong>
         <div class="text-center text-2xl">
           <strong>Iglesia San Juan</strong>
@@ -116,27 +137,53 @@ import { FechaTimeComponent } from "./components/fecha-time.component";
         </div>
       </div>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7463.700564559687!2d-103.41641524588434!3d20.716303412873792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af05b09a67a7%3A0x62830ab64d0dc0e!2sParroquia%20San%20Juan%20Mac%C3%ADas!5e0!3m2!1ses-419!2smx!4v1718232371586!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7463.700564559687!2d-103.41641524588434!3d20.716303412873792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af05b09a67a7%3A0x62830ab64d0dc0e!2sParroquia%20San%20Juan%20Mac%C3%ADas!5e0!3m2!1ses-419!2smx!4v1718232371586!5m2!1ses-419!2smx"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <div class="gap-3 columns-2 sm:columns-3 px-6">
-
-        <img class="w-full h-full rounded-lg mb-4 aspect-video" src="/assets/disenos/diseno1/bancas.png">
-          <img class="w-full h-full rounded-lg mb-4 aspect-square" src="/assets/disenos/diseno1/misa.png">
-          <img class="w-full h-full rounded-lg mb-4 aspect-square" src="/assets/disenos/diseno1/mono.png">
-          <img class="w-full h-full rounded-lg mb-4 aspect-video" src="/assets/disenos/diseno1/misa.png">
-          <img class="w-full h-full rounded-lg mb-4 aspect-video" src="/assets/disenos/diseno1/mono.png">
-          <img class="w-full h-full rounded-lg mb-4 aspect-square" src="/assets/disenos/diseno1/bancas.png">
-
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-video"
+          src="/assets/disenos/diseno1/bancas.png"
+        />
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-square"
+          src="/assets/disenos/diseno1/misa.png"
+        />
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-square"
+          src="/assets/disenos/diseno1/mono.png"
+        />
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-video"
+          src="/assets/disenos/diseno1/misa.png"
+        />
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-video"
+          src="/assets/disenos/diseno1/mono.png"
+        />
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-square"
+          src="/assets/disenos/diseno1/bancas.png"
+        />
       </div>
-
     </div>
 
-
-    <div class="ceremonia flex flex-col items-center justify-center py-20 gap-5 overflow-hidden">
-
+    <div
+      class="ceremonia flex flex-col items-center justify-center py-20 gap-5 overflow-hidden"
+    >
       <h2 class="text-5xl text-[#88A0A8]">Salon de Eventos</h2>
       <div class="flex flex-col justify-center items-center gap-3">
-        <img class="reloj w-28" src="/assets/disenos/diseno1/reloj.svg" alt="reloj">
+        <img
+          class="reloj w-28"
+          src="/assets/disenos/diseno1/reloj.svg"
+          alt="reloj"
+        />
         <strong class="text-center text-2xl">infoCeremonia.hora</strong>
         <div class="text-center text-2xl">
           <strong>Iglesia San Juan</strong>
@@ -144,103 +191,196 @@ import { FechaTimeComponent } from "./components/fecha-time.component";
         </div>
       </div>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7463.700564559687!2d-103.41641524588434!3d20.716303412873792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af05b09a67a7%3A0x62830ab64d0dc0e!2sParroquia%20San%20Juan%20Mac%C3%ADas!5e0!3m2!1ses-419!2smx!4v1718232371586!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7463.700564559687!2d-103.41641524588434!3d20.716303412873792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af05b09a67a7%3A0x62830ab64d0dc0e!2sParroquia%20San%20Juan%20Mac%C3%ADas!5e0!3m2!1ses-419!2smx!4v1718232371586!5m2!1ses-419!2smx"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <div class="gap-3 columns-2 sm:columns-3 px-6">
-
-        <img class="w-full h-full rounded-lg mb-4 aspect-video" src="/assets/disenos/diseno1/bancas.png">
-          <img class="w-full h-full rounded-lg mb-4 aspect-square" src="/assets/disenos/diseno1/misa.png">
-          <img class="w-full h-full rounded-lg mb-4 aspect-square" src="/assets/disenos/diseno1/mono.png">
-          <img class="w-full h-full rounded-lg mb-4 aspect-video" src="/assets/disenos/diseno1/misa.png">
-          <img class="w-full h-full rounded-lg mb-4 aspect-video" src="/assets/disenos/diseno1/mono.png">
-          <img class="w-full h-full rounded-lg mb-4 aspect-square" src="/assets/disenos/diseno1/bancas.png">
-
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-video"
+          src="/assets/disenos/diseno1/bancas.png"
+        />
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-square"
+          src="/assets/disenos/diseno1/misa.png"
+        />
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-square"
+          src="/assets/disenos/diseno1/mono.png"
+        />
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-video"
+          src="/assets/disenos/diseno1/misa.png"
+        />
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-video"
+          src="/assets/disenos/diseno1/mono.png"
+        />
+        <img
+          class="w-full h-full rounded-lg mb-4 aspect-square"
+          src="/assets/disenos/diseno1/bancas.png"
+        />
       </div>
-
     </div>
 
-
-    <div class="galeria flex flex-col items-center justify-center py-20 gap-5 px-4 overflow-hidden">
-
-      <img class="w-40 h-40" src="/assets/disenos/diseno1/camara.png" alt="Camara fotografica">
+    <div
+      class="galeria flex flex-col items-center justify-center py-20 gap-5 px-4 overflow-hidden"
+    >
+      <img
+        class="w-40 h-40"
+        src="/assets/disenos/diseno1/camara.png"
+        alt="Camara fotografica"
+      />
 
       <h2 class="text-5xl text-[#88A0A8]">Galería</h2>
       <div class="img-galery gap-3 columns-2 sm:columns-3 px-6">
-
-          <img class="w-full h-full rounded-3xl mb-5" src="/assets/disenos/diseno1/misa.png" alt="">
-          <img class="w-full h-full rounded-3xl mb-5" src="/assets/disenos/diseno1/bancas.png" alt="">
-          <img class="w-full h-full rounded-3xl mb-5" src="/assets/disenos/diseno1/mono.png" alt="">
-          <img class="w-full h-full rounded-3xl mb-5" src="/assets/disenos/diseno1/misa.png" alt="">
-          <img class="w-full h-full rounded-3xl mb-5" src="/assets/disenos/diseno1/bancas.png" alt="">
-          <img class="w-full h-full rounded-3xl mb-5" src="/assets/disenos/diseno1/mono.png" alt="">
-          <img class="w-full h-full rounded-3xl mb-5" src="/assets/disenos/diseno1/misa.png" alt="">
-          <img class="w-full h-full rounded-3xl mb-5" src="/assets/disenos/diseno1/misa.png" alt="">
-          <img class="w-full h-full rounded-3xl mb-5" src="/assets/disenos/diseno1/bancas.png" alt="">
-
+        <img
+          class="w-full h-full rounded-3xl mb-5"
+          src="/assets/disenos/diseno1/misa.png"
+          alt=""
+        />
+        <img
+          class="w-full h-full rounded-3xl mb-5"
+          src="/assets/disenos/diseno1/bancas.png"
+          alt=""
+        />
+        <img
+          class="w-full h-full rounded-3xl mb-5"
+          src="/assets/disenos/diseno1/mono.png"
+          alt=""
+        />
+        <img
+          class="w-full h-full rounded-3xl mb-5"
+          src="/assets/disenos/diseno1/misa.png"
+          alt=""
+        />
+        <img
+          class="w-full h-full rounded-3xl mb-5"
+          src="/assets/disenos/diseno1/bancas.png"
+          alt=""
+        />
+        <img
+          class="w-full h-full rounded-3xl mb-5"
+          src="/assets/disenos/diseno1/mono.png"
+          alt=""
+        />
+        <img
+          class="w-full h-full rounded-3xl mb-5"
+          src="/assets/disenos/diseno1/misa.png"
+          alt=""
+        />
+        <img
+          class="w-full h-full rounded-3xl mb-5"
+          src="/assets/disenos/diseno1/misa.png"
+          alt=""
+        />
+        <img
+          class="w-full h-full rounded-3xl mb-5"
+          src="/assets/disenos/diseno1/bancas.png"
+          alt=""
+        />
       </div>
-
     </div>
 
-
-    <div class="generales flex flex-col justify-center items-center py-20 gap-10 overflow-hidden">
-
-      <img class="icono-all w-40 h-40" src="/assets/disenos/diseno1/all.png" alt="Generales del evento">
+    <div
+      class="generales flex flex-col justify-center items-center py-20 gap-10 overflow-hidden"
+    >
+      <img
+        class="icono-all w-40 h-40"
+        src="/assets/disenos/diseno1/all.png"
+        alt="Generales del evento"
+      />
       <h2 class="text-5xl text-[#88A0A8] text-center">Generales del Evento</h2>
 
       <div class="gap-3 columns-3 px-6">
-
-          <div class="rules flex flex-col items-center justify-center">
-            <img class="w-40 h-40" src="/assets/disenos/diseno1/vestimenta-formal.png" alt="Vestimenta formal">
-            <p class="text-xl font-semibold">Vestimenta</p>
-          </div>
-          <div class="rules flex flex-col items-center justify-center">
-            <img class="w-40 h-40" src="/assets/disenos/diseno1/no-ninos.png" alt="Vestimenta formal">
-            <p class="text-xl font-semibold">Niños</p>
-          </div>
-          <div class="rules flex flex-col items-center justify-center">
-            <img class="w-40 h-40" src="/assets/disenos/diseno1/cubrebocas.png" alt="Vestimenta formal">
-            <p class="text-xl font-semibold">Cubrebocas</p>
-          </div>
-
+        <div class="rules flex flex-col items-center justify-center">
+          <img
+            class="w-40 h-40"
+            src="/assets/disenos/diseno1/vestimenta-formal.png"
+            alt="Vestimenta formal"
+          />
+          <p class="text-xl font-semibold">Vestimenta</p>
+        </div>
+        <div class="rules flex flex-col items-center justify-center">
+          <img
+            class="w-40 h-40"
+            src="/assets/disenos/diseno1/no-ninos.png"
+            alt="Vestimenta formal"
+          />
+          <p class="text-xl font-semibold">Niños</p>
+        </div>
+        <div class="rules flex flex-col items-center justify-center">
+          <img
+            class="w-40 h-40"
+            src="/assets/disenos/diseno1/cubrebocas.png"
+            alt="Vestimenta formal"
+          />
+          <p class="text-xl font-semibold">Cubrebocas</p>
+        </div>
       </div>
-
     </div>
 
-
-    <div class="regalos flex flex-col items-center justify-center py-20 gap-10 overflow-hidden">
-
-      <img class="reg-img w-40 h-40" src="/assets/disenos/diseno1/regalo.png" alt="Caja de regalo">
+    <div
+      class="regalos flex flex-col items-center justify-center py-20 gap-10 overflow-hidden"
+    >
+      <img
+        class="reg-img w-40 h-40"
+        src="/assets/disenos/diseno1/regalo.png"
+        alt="Caja de regalo"
+      />
       <h2 class="text-5xl text-[#88A0A8]">Mesa de regalos</h2>
-      <p class="deseo text-2xl text-center text-[#1E293B]">Si deseas hacer un regalo, puedes hacerlo a través de nuestra lista de regalos.</p>
+      <p class="deseo text-2xl text-center text-[#1E293B]">
+        Si deseas hacer un regalo, puedes hacerlo a través de nuestra lista de
+        regalos.
+      </p>
 
-      <div class="items gap-3 columns-2  px-6">
+      <div class="items gap-3 columns-2 px-6">
         <div class="flex flex-col items-center">
-          <img src="/assets/disenos/diseno1/liverpool.png" class="max-w-[160px]" >
+          <img
+            src="/assets/disenos/diseno1/liverpool.png"
+            class="max-w-[160px]"
+          />
           <p class="text-center">Número de Evento: 000000</p>
-          <a class="btn p-5 rounded-3xl bg-[#FFCBA7] text-[#88a0a8] hover:bg-slate-800 hover:text-white transition-all duration-300 text-center">Ver lista de regalos</a>
+          <a
+            class="btn p-5 rounded-3xl bg-[#FFCBA7] text-[#88a0a8] hover:bg-slate-800 hover:text-white transition-all duration-300 text-center"
+            >Ver lista de regalos</a
+          >
         </div>
         <div class="flex flex-col items-center">
-          <img src="/assets/disenos/diseno1/amazon.png" class="max-w-[160px]" >
+          <img src="/assets/disenos/diseno1/amazon.png" class="max-w-[160px]" />
           <p class="text-center">Número de Evento: 000000</p>
-          <a class="btn p-5 rounded-3xl bg-[#FFCBA7] text-[#88a0a8] hover:bg-slate-800 hover:text-white transition-all duration-300 text-center">Ver lista de regalos</a>
+          <a
+            class="btn p-5 rounded-3xl bg-[#FFCBA7] text-[#88a0a8] hover:bg-slate-800 hover:text-white transition-all duration-300 text-center"
+            >Ver lista de regalos</a
+          >
         </div>
-
       </div>
-
     </div>
 
-
-    <div class="confirmar flex flex-col items-center justify-center py-20 gap-5 overflow-hidden">
-
-      <img class="w-40 h-40" src="/assets/disenos/diseno1/check.png" alt="Check de asistencia">
+    <div
+      class="confirmar flex flex-col items-center justify-center py-20 gap-5 overflow-hidden"
+    >
+      <img
+        class="w-40 h-40"
+        src="/assets/disenos/diseno1/check.png"
+        alt="Check de asistencia"
+      />
       <h2 class="text-5xl text-center text-[#88A0A8]">Confirmar Asistencia</h2>
-      <p class="text-2xl text-center text-[#1E293B]">Por favor confirma tu asistencia antes del 20 de Noviembre de 2024</p>
+      <p class="text-2xl text-center text-[#1E293B]">
+        Por favor confirma tu asistencia antes del 20 de Noviembre de 2024
+      </p>
       <div class="flex gap-5">
-        <a href="'https://wa.me/5512345678" class="bg-[#FFCBA7] hover:bg-slate-800 transition-all duration-300 text-white px-5 py-2 rounded-full">Confirmar</a>
+        <a
+          href="'https://wa.me/5512345678"
+          class="bg-[#FFCBA7] hover:bg-slate-800 transition-all duration-300 text-white px-5 py-2 rounded-full"
+          >Confirmar</a
+        >
       </div>
-
     </div>
-
-
   </div>
 </LayoutDiseno>

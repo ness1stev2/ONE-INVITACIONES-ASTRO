@@ -1,84 +1,265 @@
----
-import LayoutDiseno from "../../layouts/LayoutDiseno.astro";
+<div class="max-w-3xl mx-auto bg-slate-100" style="background-image: url('/assets/disenos/diseno2/bg.jpg');">
 
----
+  <div class="inicio relative">
+    <video autoplay loop playsinline muted
+      class="object-cover object-left md:object-center h-screen brightness-50 rounded-b-3xl">
+      <source src="/assets/disenos/diseno2/video-d2.mp4" type="video/mp4">
+    </video>
 
-<script>
+    <div class="absolute w-11/12 top-0 translate-x-1/2 right-1/2">
 
-// Crear una instancia de IntersectionObserver
-const observer = new IntersectionObserver(entries => {
-  // Loop a través de todas las entradas
-  entries.forEach(entry => {
-    // Si el elemento está en el viewport
-    if (entry.isIntersecting) {
-      // Agrega una animación
-      entry.target.classList.add('animate__animated');
-    } else {
-      // Quita la animación cuando el elemento sale del viewport
-      entry.target.classList.remove('animate__animated');
-    }
-  });
-});
+      <div class="flex flex-col items-center justify-around h-screen">
 
-// Seleccionar todos los elementos con la clase 'viewport'
-const elements = document.querySelectorAll('.viewport');
+        <img class="corona" src="/assets/disenos/diseno2/titulo.png" alt="Icono corona">
 
-// Comenzar a observar cada elemento
-elements.forEach(element => observer.observe(element));
+        <div class="overflow-hidden">
+          <img class="title" src="/assets/disenos/diseno2/elgrandia.png" alt="">
+        </div>
 
-</script>
+        <div class="flex flex-col items-center justify-center gap-3">
+          <strong class="font-dancing text-4xl text-white text-center">20 / NOV / 2024</strong>
+          <img class="IconBottom" src="/assets/disenos/diseno2/flecha.png" alt="">
 
-<LayoutDiseno title="Invitacion Lucia">
-  <div class="relative h-screen">
-    <div
-      class="absolute inset-0 bg-[url('/assets/disenos/lucia/invitacionLucia.png')] bg-center bg-cover"
-      style="clip-path: polygon(0 0, 0 100vh, 80% 0);"
-    ></div>
-    <div class="flex flex-row z-10 relative">
-      <div class="basis-1/4"></div>
-      <div class="basis-3/4">
-        <div class="flex flex-col h-screen justify-center gap-6">
-          <img src="/assets/disenos/lucia/fecha.png" class="w-[50%] ml-auto viewport animate__backInLeft" alt="fecha" />
-          <img src="/assets/disenos/lucia/titulo.png" class="w-[80%] ml-auto" alt="titulo" />
-          <p class="font-serif text-xl text-center mt-20">Con alegría en nuestros corazones, te invitamos a compartir la bendición de la Primera Comunión de Ana Lucia.
-            Únete a nosotros en este momento especial de fe, amor y gratitud hacia Dios.</p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <div class="flex flex-col py-10 px-3 gap-16 overflow-hidden">
+
+
+    <div class="nuestra-boda flex flex-col justify-center items-center gap-5 py-20">
+      <h1 class="nuestra-boda font-kalam text-5xl text-[#88A0A8]">Nuestra Boda</h1>
+      <p class="text-lg text-center text-[#1E293B]">Tan cercana que tu mano sobre mi pecho es mía, tan íntima que
+        tus
+        ojos se cierran con mi sueño.</p>
+    </div>
+
+
+
+
+  </div>
+
+  <div class=" flex flex-col py-10 px-3 gap-16 overflow-hidden">
+
+    <div class="nuestros-padres flex flex-col justify-center items-center gap-8 py-20 overflow-hidden">
+
+      <h2 class="text-5xl text-[#88A0A8]">Nuestros Padres</h2>
+
+      <div class="flex gap-8">
+        <div class="padres flex flex-col items-center justify-center gap-5">
+          <img class="rounded-full" src="/assets/disenos/diseno1/padres1.png" alt="" loading="lazy">
+          <strong class="">Novio</strong>
+          <ul class="text-lg text-center text-[#1E293B]">
+            <li>Josefína Ortiz</li>
+            <li>Y</li>
+            <li>Pedro Cervantes</li>
+          </ul>
+        </div>
+        <div class="padres flex flex-col items-center justify-center gap-5">
+          <img class="rounded-full" src="/assets/disenos/diseno1/padres2.png" alt="" loading="lazy">
+          <strong class="">Novia</strong>
+          <ul class="text-lg text-center text-[#1E293B]">
+            <li>Rocío Velázquez</li>
+            <li>Y</li>
+            <li>Miguel Ángel Pérez</li>
+
+          </ul>
         </div>
       </div>
+
+
+
     </div>
+
   </div>
 
-  <div class="flex flex-row gap-16">
-    <div class="basis-1/2 px-16">
-      <div class="flex flex-col justify-center">
-        <img src="/assets/disenos/lucia/iglesia.png" alt="">
-        <hr>
-        <p>misa</p>
-        <hr>
-        <h2>La Crucifixión del Señor</h2>
-        <img src="/assets/disenos/lucia/reloj.png" alt="">
-        <hr>
-        <p>horario</p>
-        <hr>
-        <p>12:oo</p>
-        <button>¿Cómo llegar?</button>
+  <div class="fecha-timer bg-cover py-20 my-10 rounded-3xl w-11/12 mx-auto"
+    style="background-image: url(/assets/disenos/diseno1/tiempo.png);">
 
-      </div>
-    </div>
-  <div class="basis-1/2 px-16">
-      <div class="flex flex-col justify-center">
-        <img src="/assets/disenos/lucia/dance.png" alt="">
-        <hr>
-        <p>misa</p>
-        <hr>
-        <h2>La Crucifixión del Señor</h2>
-        <img src="/assets/disenos/lucia/reloj.png" alt="">
-        <hr>
-        <p>horario</p>
-        <hr>
-        <p>12:oo</p>
-        <button class="viewport animate__backInLeft">¿Cómo llegar?</button>
 
+    <div class="flex flex-col items-center justify-center gap-10">
+      <strong class="text-3xl">20 Noviembre 2024</strong>
+      <p class="text-2xl">Faltan</p>
+
+      <div class="flex gap-6">
+        <div class="">
+          <div class="flex items-center justify-center rounded-full bg-[#FFCBA7] text-white w-16 h-16">
+            <p class="font-bold">24</p>
+          </div>
+          <p class="text-center font-bold">Meses</p>
+        </div>
+        <div class="">
+          <div class="flex items-center justify-center rounded-full bg-[#FFCBA7] text-white w-16 h-16">
+            <p class="font-bold">24</p>
+          </div>
+          <p class="text-center font-bold">Días</p>
+        </div>
+        <div class="">
+          <div class="flex items-center justify-center rounded-full bg-[#FFCBA7] text-white w-16 h-16">
+            <p class="font-bold">24</p>
+          </div>
+          <p class="text-center font-bold">Hrs</p>
+        </div>
+        <div class="">
+          <div class="flex items-center justify-center rounded-full bg-[#FFCBA7] text-white w-16 h-16">
+            <p class="font-bold">24</p>
+          </div>
+          <p class="text-center font-bold">Seg</p>
+        </div>
       </div>
+
     </div>
+
+
+
   </div>
-</LayoutDiseno>
+
+  <div class="ceremonia flex flex-col items-center justify-center py-20 gap-5 overflow-hidden">
+
+    <h2 class="text-5xl text-[#88A0A8]">Ceremonia</h2>
+    <div class="flex flex-col justify-center items-center gap-3">
+      <img class="reloj w-28" src="/assets/disenos/diseno1/reloj.svg" alt="" loading="lazy">
+      <strong>6:00 PM</strong>
+      <p class="text-center">
+        Iglesia La Cañita
+        Av Miguel Hidalgo, Centro, 52000 Lerma de Villada, Méx.
+      </p>
+    </div>
+    <iframe class="w-11/12 h-96 rounded-3xl"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.0271525851235!2d-103.42165292387737!3d20.668474300053866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9b015c62c7%3A0xc8e5ccdb49aa6d6c!2sLa%20Terraza%20Clouthier!5e0!3m2!1ses-419!2smx!4v1713380021197!5m2!1ses-419!2smx"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div class="galery grid grid-cols-2 gap-4 px-6">
+      <img class="w-full h-full rounded-tl-3xl" src="/assets/disenos/diseno1/misa.png" loading="lazy" alt="">
+      <img class="w-full h-full rounded-tr-3xl" src="/assets/disenos/diseno1/bancas.png" loading="lazy" alt="">
+      <div class="col-span-2">
+        <img class="w-full h-full rounded-b-3xl" src="/assets/disenos/diseno1/mono.png" loading="lazy" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="evento flex flex-col items-center justify-center py-20 gap-10 overflow-hidden">
+
+
+    <h2 class="text-5xl text-[#88A0A8]">Salon de eventos</h2>
+    <div class="flex flex-col justify-center items-center gap-3">
+      <img class="reloj w-28" src="/assets/disenos/diseno1/reloj.svg" alt="Reloj" loading="lazy">
+      <strong>6:00 PM</strong>
+      <p class="text-center">
+        Iglesia La Cañita
+        Av Miguel Hidalgo, Centro, 52000 Lerma de Villada, Méx.
+      </p>
+    </div>
+    <iframe class="w-11/12 h-96 rounded-3xl"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.0271525851235!2d-103.42165292387737!3d20.668474300053866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9b015c62c7%3A0xc8e5ccdb49aa6d6c!2sLa%20Terraza%20Clouthier!5e0!3m2!1ses-419!2smx!4v1713380021197!5m2!1ses-419!2smx"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div class="galery grid grid-cols-2 gap-4 px-6">
+      <div class="col-span-2">
+        <img class="w-full h-full rounded-t-3xl" src="/assets/disenos/diseno1/novios.png" loading="lazy" alt="">
+      </div>
+      <img class="w-full h-full rounded-bl-3xl" src="/assets/disenos/diseno1/anillos.png" loading="lazy" alt="">
+      <img class="w-full h-full rounded-br-3xl" src="/assets/disenos/diseno1/mano-anillo.png" loading="lazy" alt="">
+    </div>
+
+  </div>
+
+  <hr class="border-slate-300">
+
+  <div class="generales flex flex-col justify-center items-center py-20 gap-10 overflow-hidden">
+
+    <img class="icono-all w-40 h-40" src="/assets/disenos/diseno1/all.png" alt="Caja de regalo">
+    <h2 class="text-5xl text-[#88A0A8] text-center">Generales del Evento</h2>
+
+    <div class="flex text-center gap-5">
+      <div class="rules flex flex-col items-center justify-center">
+        <img class="w-40 h-40" src="/assets/disenos/diseno1/vestimenta-formal.png" alt="Vestimenta formal">
+        <p class="text-lg font-semibold">Vestimenta Formal</p>
+      </div>
+      <div class="rules flex flex-col items-center justify-center">
+        <img class="w-40 h-40" src="/assets/disenos/diseno1/no-ninos.png" alt="No niños">
+        <p class="text-lg font-semibold">No Niños</p>
+      </div>
+      <div class="rules flex flex-col items-center justify-center">
+        <img class="w-40 h-40" src="/assets/disenos/diseno1/cubrebocas.png" alt="cubrebocas">
+        <p class="text-lg font-semibold">Cubrebocas</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <hr class="border-slate-300">
+
+  <div class="regalos flex flex-col items-center justify-center py-20 gap-10 overflow-hidden">
+
+    <img class="reg-img w-40 h-40" src="/assets/disenos/diseno1/regalo.png" alt="Caja de regalo">
+    <h2 class="text-5xl text-[#88A0A8]">Mesa de Regalos</h2>
+    <p class="deseo text-center text-[#1E293B]">Si deseas hacer un regalo, puedes hacerlo a través de nuestra lista
+      de
+      regalos.</p>
+    <div class="marcas-regalo flex gap-10">
+
+      <div class="items flex flex-col justify-center items-center">
+        <img src="/assets/disenos/diseno1/liverpool.png" alt="">
+        <p class="text-center">Número de Evento: 000000</p>
+        <div class="btn p-5 rounded-3xl bg-[#FFCBA7] text-[#88a0a8] text-center">Ver mesa de regalos</div>
+      </div>
+
+      <div class="items flex flex-col justify-center items-center">
+        <img src="/assets/disenos/diseno1/amazon.png" alt="">
+        <p class="text-center">Número de Evento: 000000</p>
+        <div class="btn p-5 rounded-3xl bg-[#FFCBA7] text-[#88a0a8] text-center">Ver mesa de regalos</div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <hr class="border-slate-300">
+
+  <div class="galeria flex flex-col items-center justify-center py-20 gap-5 px-4 overflow-hidden">
+
+    <img class="w-40 h-40" src="/assets/disenos/diseno1/camara.png" alt="Camara fotografica">
+
+    <h2 class="text-5xl text-[#88A0A8]">Galería</h2>
+    <div class="img-galery grid grid-cols-3 gap-4">
+      <img class="w-full h-full rounded-tl-3xl" src="/assets/disenos/diseno1/novios.png" loading="lazy" alt="">
+      <img class="w-full h-full" src="/assets/disenos/diseno1/novios.png" loading="lazy" alt="">
+      <img class="w-full h-full rounded-tr-3xl" src="/assets/disenos/diseno1/novios.png" loading="lazy" alt="">
+      <img class="w-full h-full rounded-bl-3xl" src="/assets/disenos/diseno1/novios.png" loading="lazy" alt="">
+      <img class="w-full h-full" src="/assets/disenos/diseno1/novios.png" loading="lazy" alt="">
+      <img class="w-full h-full rounded-br-3xl" src="/assets/disenos/diseno1/novios.png" loading="lazy" alt="">
+    </div>
+
+
+  </div>
+
+
+  <hr class="border-slate-300">
+
+  <div class="confirmar flex flex-col items-center justify-center py-20 gap-5 overflow-hidden">
+
+    <img class="w-40 h-40" src="/assets/disenos/diseno2/check.png" alt="Check de asistencia">
+    <h2 class="text-5xl text-center text-[#88A0A8]">Confirmar Asistencia</h2>
+    <p class="text-center text-[#1E293B]">Por favor confirma tu asistencia antes del 20 de Agosto de 2024</p>
+    <div class="flex gap-5">
+      <button class="bg-[#FFCBA7] text-white px-5 py-2 rounded-full">Confirmar</button>
+    </div>
+
+  </div>
+
+  <app-footer />
+
+</div>
