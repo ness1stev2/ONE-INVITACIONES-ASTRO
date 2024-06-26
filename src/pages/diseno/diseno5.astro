@@ -1,9 +1,288 @@
 ---
 import LayoutDiseno from "../../layouts/LayoutDiseno.astro";
+import Asistencia from "./components/Asistencia.astro";
+import Galeria from "./components/Galeria.astro";
+import Regalos from "./components/Regalos.astro";
+
+const img =
+[
+  "/assets/disenos/diseno5/galeria1.png",
+  "/assets/disenos/diseno5/galeria2.png",
+  "/assets/disenos/diseno5/galeria3.png",
+  "/assets/disenos/diseno5/galeria4.png",
+  "/assets/disenos/diseno5/galeria5.png",
+  "/assets/disenos/diseno5/galeria6.png",
+  "/assets/disenos/diseno5/galeria3.png",
+]
 ---
 
-<LayoutDiseno title="Diseño 4">
+<LayoutDiseno title="Diseño 5">
+  <div class="diseno bg-slate-100">
+    <div
+      class="max-w-3xl mx-auto bg-fixed bg-no-repeat bg-cover"
+    >
+      <div class="inicio relative">
+        <video
+          autoplay
+          loop
+          playsinline
+          muted
+          class="object-cover object-center w-full md:object-center h-screen brightness-75 rounded-b-3xl"
+        >
+          <source
+            src="/assets/disenos/diseno5/PLANTILLA 5.mp4"
+            type="video/mp4"
+          />
+        </video>
 
+        <div class="absolute w-11/12 top-0 translate-x-1/2 right-1/2">
+          <div class="flex flex-col items-center justify-between h-screen">
+            <div class="w-full h-1/4"></div>
+            <div class="flex flex-col items-center justify-center ">
+              <img src="/assets/disenos/diseno5/caliz.png" alt="">
+              <div class="bg-[#75464380] pb-10 pt-2 w-5/6 flex items-center justify-center" style="clip-path: polygon(100% 0%, 100% 65%, 50% 100%, 0 65%, 0 0%);">
+                <p class="text-6xl text-white text-center">Mi primera comunión </p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center gap-5 mb-5">
+              <p class="text-white text-6xl">Agos 20, 2024</p>
+              <img src="/assets/disenos/diseno4/flecha.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="w-11/12 h-[50vh] mx-auto flex flex-col items-center justify-center gap-4"
+      >
+        <div class="flex gap-3 *:text-5xl">
+          <span class="text-[#754643]">Mi primera comunión </span>
+        </div>
+        <p class="text-3xl text-center">
+          En este día de mi Primera Comunión, abro las puertas de mi corazón para recibir a Jesús, quien con amor infinito viene a morar en mí
+        </p>
+      </div>
+
+      <hr class="w-11/12 mx-auto" />
+
+      <div class="misPadres w-11/12 mx-auto">
+        <div class="flex justify-center items-center h-[50vh] gap-5">
+          <div class="flex flex-col justify-center items-center">
+            <img src="/assets/disenos/diseno1/padres2.png" alt="" />
+            <div class="flex gap-3 *:text-5xl">
+              <span class="text-[#754643]">MIS PADRES</span>
+            </div>
+            <span class="text-2xl text-center">Erika Morales y Eduardo Benavides</span>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img src="/assets/disenos/diseno1/padres2.png" alt="" />
+            <div class="flex gap-3 *:text-5xl">
+              <span class="text-[#754643]">MI MADRINA</span>
+            </div>
+            <span class="text-2xl text-center">Erika Morales y Eduardo Benavides</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tiempo w-11/12 h-[50vh] m-auto">
+        <div
+          class="flex flex-col justify-center h-[320px] mx-auto rounded-2xl bg-[url('/assets/disenos/diseno5/tiempo.png')] bg-cover bg-bottom before:contrast-50"
+        >
+          <div class="text-5xl text-center text-[#754643]">20 Noviembre 2024</div>
+          <div class="text-3xl text-center text-white">faltan</div>
+          <div class="flex justify-evenly">
+            <div class="meses">
+              <p
+                class="text-5xl text-center p-5 rounded-full bg-[#754643] text-white"
+              >
+                3
+              </p>
+              <p class="text-2xl text-center text-white">Meses</p>
+            </div>
+            <div class="dias">
+              <p
+                class="text-5xl text-center p-5 rounded-full bg-[#754643] text-white"
+              >
+                10
+              </p>
+              <p class="text-2xl text-center text-white">Dias</p>
+            </div>
+            <div class="horas">
+              <p
+                class="text-5xl text-center p-5 rounded-full bg-[#754643] text-white"
+              >
+                12
+              </p>
+              <p class="text-2xl text-center text-white">Horas</p>
+            </div>
+            <div class="minutos">
+              <p
+                class="text-5xl text-center p-5 rounded-full bg-[#754643] text-white"
+              >
+                45
+              </p>
+              <p class="text-2xl text-center text-white">Minutos</p>
+            </div>
+            <div class="segundos">
+              <p
+                class="text-5xl text-center p-5 rounded-full bg-[#754643] text-white"
+              >
+                19
+              </p>
+              <p class="text-2xl text-center text-white">Segundos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="salon mx-auto w-11/12">
+        <div class="flex flex-col gap-5 items-center">
+          <h2 class="text-5xl text-[#754643]">Salon de eventos</h2>
+          <img src="/assets/disenos/diseno5/reloj.svg" alt="" />
+          <strong class="font-bold text-xl">6:00 PM</strong>
+          <p class="text-2xl w-5/6 mx-auto text-center">
+            Iglesia La Cañita Av Miguel Hidalgo, Centro, 52000 Lerma de Villada,
+            Méx.
+          </p>
+          <iframe
+            class="w-full h-[450px] rounded-2xl overflow-hidden"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12556.701059735942!2d-103.42484621845995!3d20.664307348416415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9b015c62c7%3A0xc8e5ccdb49aa6d6c!2sLa%20Terraza%20Clouthier!5e0!3m2!1ses-419!2smx!4v1719253198020!5m2!1ses-419!2smx"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="flex flex-col gap-4">
+            <img
+              class="object-fill rounded-lg"
+              src="/assets/disenos/diseno5/misa1.png"
+              alt=""
+            />
+            <div class="columns-2">
+              <img
+                class="object-fill rounded-lg"
+                src="/assets/disenos/diseno5/misa2.png"
+                alt=""
+              />
+              <img
+                class="object-fill rounded-lg"
+                src="/assets/disenos/diseno5/misa3.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="salon mx-auto w-11/12">
+        <div class="flex flex-col gap-5 items-center">
+          <h2 class="text-5xl text-[#754643]">RECEPCIÓN</h2>
+          <img src="/assets/disenos/diseno5/reloj.svg" alt="" />
+          <strong class="font-bold text-xl">6:00 PM</strong>
+          <p class="text-2xl w-5/6 mx-auto text-center">
+            Iglesia La Cañita Av Miguel Hidalgo, Centro, 52000 Lerma de Villada,
+            Méx.
+          </p>
+          <iframe
+            class="w-full h-[450px] rounded-2xl overflow-hidden"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12556.701059735942!2d-103.42484621845995!3d20.664307348416415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9b015c62c7%3A0xc8e5ccdb49aa6d6c!2sLa%20Terraza%20Clouthier!5e0!3m2!1ses-419!2smx!4v1719253198020!5m2!1ses-419!2smx"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="flex flex-col gap-4">
+            <img
+              class="object-fill rounded-lg"
+              src="/assets/disenos/diseno5/recepcion1.png"
+              alt=""
+            />
+            <div class="columns-2">
+              <img
+                class="object-fill rounded-lg"
+                src="/assets/disenos/diseno5/recepcion2.png"
+                alt=""
+              />
+              <img
+                class="object-fill rounded-lg"
+                src="/assets/disenos/diseno5/recepcion3.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="generales w-11/12 mx-auto">
+        <div class="flex flex-col items-center justify-center gap-5 h-[50vh]">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="141" zoomAndPan="magnify" viewBox="0 0 105.75 105.749997" height="141" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><filter x="0%" y="0%" width="100%" height="100%" id="c7bb40b46b"><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" color-interpolation-filters="sRGB"/></filter><mask id="93cfcd0dbb"><g filter="url(#c7bb40b46b)"><rect x="-10.575" width="126.9" fill="#000000" y="-10.575" height="126.899996" fill-opacity="0.3"/></g></mask><clipPath id="a8ca60af40"><path d="M 0.296875 0.296875 L 84.578125 0.296875 L 84.578125 84.578125 L 0.296875 84.578125 Z M 0.296875 0.296875 " clip-rule="nonzero"/></clipPath><clipPath id="09a77c8ee3"><rect x="0" width="85" y="0" height="85"/></clipPath><clipPath id="4d028b6b95"><path d="M 0 0 L 104.753906 0 L 104.753906 104.753906 L 0 104.753906 Z M 0 0 " clip-rule="nonzero"/></clipPath></defs><g mask="url(#93cfcd0dbb)"><g transform="matrix(1, 0, 0, 1, 10, 10)"><g clip-path="url(#09a77c8ee3)"><g clip-path="url(#a8ca60af40)"><path fill="#754643" d="M 84.402344 42.445312 C 84.402344 65.617188 65.617188 84.402344 42.445312 84.402344 C 19.273438 84.402344 0.488281 65.617188 0.488281 42.445312 C 0.488281 19.273438 19.273438 0.488281 42.445312 0.488281 C 65.617188 0.488281 84.402344 19.273438 84.402344 42.445312 Z M 84.402344 42.445312 " fill-opacity="1" fill-rule="nonzero"/></g></g></g></g><g clip-path="url(#4d028b6b95)"><path fill="#754643" d="M 83.914062 104.894531 L 104.894531 83.914062 L 104.894531 99.648438 C 104.894531 102.542969 102.542969 104.894531 99.648438 104.894531 Z M 20.980469 104.894531 L 0 83.914062 L 0 99.648438 C 0 102.542969 2.347656 104.894531 5.246094 104.894531 Z M 0 5.246094 L 0 20.980469 L 20.980469 0 L 5.246094 0 C 2.347656 0 0 2.347656 0 5.246094 Z M 99.648438 0 L 83.914062 0 L 104.894531 20.980469 L 104.894531 5.246094 C 104.894531 2.347656 102.542969 0 99.648438 0 Z M 99.648438 0 " fill-opacity="1" fill-rule="nonzero"/></g></svg>
+          <h2 class="text-5xl text-[#754643]">Generales del evento</h2>
+          <div class="flex flex-wrap items-center justify-center gap-10">
+            <div class="flex flex-col items-center">
+              <img src="/assets/disenos/diseno5/trajeBaño.svg" alt="" />
+              <p class="text-2xl text-[#754643]">Trae tu traje de baño</p>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="/assets/disenos/diseno5/alimentos.svg" alt="" />
+              <p class="text-2xl text-[#754643]">Alimentos 4-6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Galeria imagenes={img} color="#754643"/>
+      
+      <hr class="w-11/12 mx-auto" />
+
+      <Regalos color="#754643"/>
+
+      <Asistencia fecha="Agosto de 2024" colorh2="#754643"/>
+
+        <div class="flex flex-col items-center justify-center gap-5">
+          <img src="/assets/disenos/diseno5/camara.svg" alt="">
+          <h2 class="text-5xl text-[#754643]">Galeria</h2>
+          <div class="img-galery gap-3 columns-2 sm:columns-3 px-6">
+            <img
+              class="w-full h-full rounded-2xl mb-5"
+              src="/assets/disenos/diseno5/galeria1.png"
+              alt=""
+            />
+            <img
+              class="w-full h-full rounded-2xl mb-5"
+              src="/assets/disenos/diseno5/galeria2.png"
+              alt=""
+            />
+            <img
+              class="w-full h-full rounded-2xl mb-5"
+              src="/assets/disenos/diseno5/galeria3.png"
+              alt=""
+            />
+            <img
+            class="w-full h-full rounded-2xl mb-5"
+            src="/assets/disenos/diseno5/galeria4.png"
+            alt=""
+            />
+            <img
+            class="w-full h-full rounded-2xl mb-5"
+            src="/assets/disenos/diseno5/galeria5.png"
+            alt=""
+            />
+            <img
+            class="w-full h-full rounded-2xl mb-5"
+            src="/assets/disenos/diseno5/galeria6.png"
+            alt=""
+            />
+            <img
+              class="w-full h-full rounded-2xl mb-5"
+              src="/assets/disenos/diseno5/galeria3.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
 
 
 </LayoutDiseno>

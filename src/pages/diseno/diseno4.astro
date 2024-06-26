@@ -1,5 +1,10 @@
 ---
 import LayoutDiseno from "../../layouts/LayoutDiseno.astro";
+import Asistencia from "./components/Asistencia.astro";
+import Galeria from "./components/Galeria.astro";
+import Regalos from "./components/Regalos.astro";
+
+const img = ["/assets/disenos/diseno1/misa.png","/assets/disenos/diseno1/bancas.png","/assets/disenos/diseno1/mono.png","/assets/disenos/diseno1/misa.png","/assets/disenos/diseno1/bancas.png","/assets/disenos/diseno1/mono.png"]
 ---
 
 <LayoutDiseno title="Diseño 4">
@@ -175,44 +180,13 @@ import LayoutDiseno from "../../layouts/LayoutDiseno.astro";
 
       <hr class="w-11/12 mx-auto" />
 
-      <div class="regalos w-11/12 mx-auto">
-        <div class="flex flex-col items-center justify-center gap-5 h-[50vh]">
-          <img src="/assets/disenos/diseno4/regalos.png" alt="" />
-          <h2 class="text-5xl text-[#FF66C4]">Mesa de regalos</h2>
-          <p>
-            Si deseas hacer un regalo, puedes hacerlo a través de nuestra lista
-            de regalos.
-          </p>
-          <div class="items gap-3 columns-2 px-6">
-            <div class="flex flex-col items-center">
-              <img
-                src="/assets/disenos/diseno1/liverpool.png"
-                class="max-w-[160px]"
-              />
-              <p class="text-center">Número de Evento: 000000</p>
-              <a
-                class="btn p-5 rounded-3xl bg-[#FFCBA7] text-[#88a0a8] hover:bg-slate-800 hover:text-white transition-all duration-300 text-center"
-                >Ver lista de regalos</a
-              >
-            </div>
-            <div class="flex flex-col items-center">
-              <img
-                src="/assets/disenos/diseno1/amazon.png"
-                class="max-w-[160px]"
-              />
-              <p class="text-center">Número de Evento: 000000</p>
-              <a
-                class="btn p-5 rounded-3xl bg-[#FFCBA7] text-[#88a0a8] hover:bg-slate-800 hover:text-white transition-all duration-300 text-center"
-                >Ver lista de regalos</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
+      <Regalos color="#ff66c4">
 
       <hr class="w-11/12 mx-auto" />
 
-      <div class="galeria w-11/12 mx-auto">
+      <Galeria color="#FF66C4" imagenes={img} />
+
+      <!-- <div class="galeria w-11/12 mx-auto">
         <div class="flex flex-col items-center justify-center gap-5">
           <img src="/assets/disenos/diseno4/camara.png" alt="">
           <h2 class="text-5xl text-[#FF66C4]">Galeria</h2>
@@ -249,15 +223,9 @@ import LayoutDiseno from "../../layouts/LayoutDiseno.astro";
             />
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="asistencia w-11/12 mx-auto">
-        <div class="flex flex-col items-center justify-center gap-5 h-[50vh]">
-          <img src="/assets/disenos/diseno4/confirmar.png" alt="">
-          <h2 class="text-5xl text-[#FF66C4]">Confirmar Asistencia</h2>
-          <p class="text-2xl">Por favor confirma tu asistencia antes del 20 de Agosto de 2024</p>
-        </div>
-      </div>
+      <Asistencia fecha="Agosto de 2024" colorh2="#FF66C4" />
 
     </div>
   </div>

@@ -1,267 +1,246 @@
-<div class="diseno bg-slate-100">
+---
+import LayoutDiseno from "../../layouts/LayoutDiseno.astro";
+import Asistencia from "./components/Asistencia.astro";
+import Galeria from "./components/Galeria.astro";
+import Regalos from "./components/Regalos.astro";
 
-  <div class="max-w-3xl mx-auto bg-fixed bg-no-repeat bg-cover" style="background-image: url('/assets/disenos/diseno3/bg.jpg');">
+const img = [
+  "/assets/disenos/diseno3/quinceanera1.png",
+  "/assets/disenos/diseno3/quinceanera2.png",
+  "/assets/disenos/diseno3/quinceanera3.png",
+  "/assets/disenos/diseno3/quinceanera4.png",
+  "/assets/disenos/diseno3/quinceanera5.png",
+  "/assets/disenos/diseno3/quinceanera6.png",
+];
+---
 
-      <div class="inicio relative">
-        <video autoplay loop playsinline muted
-          class="object-cover object-left md:object-center h-screen brightness-75 rounded-b-3xl">
-          <source src="/assets/disenos/diseno3/video.mp4" type="video/mp4">
-        </video>
+<LayoutDiseno title="Diseño 3">
+  <div class="diseno bg-slate-100">
 
-        <div class="absolute w-11/12 top-0 translate-x-1/2 right-1/2">
+    <div class="max-w-3xl mx-auto bg-fixed bg-no-repeat bg-cover" style="background-image: url('/assets/disenos/diseno3/bg.jpg');">
 
-          <div class="flex flex-col items-center justify-around h-screen">
+        <div class="inicio relative">
+          <video autoplay loop playsinline muted
+            class="object-cover object-left md:object-center h-screen brightness-75 rounded-b-3xl">
+            <source src="/assets/disenos/diseno3/video.mp4" type="video/mp4">
+          </video>
 
-            <img class="corona" src="/assets/disenos/diseno3/titulo.png" alt="Icono corona">
+          <div class="absolute w-11/12 top-0 translate-x-1/2 right-1/2">
 
-            <div class="overflow-hidden">
-              <img class="title" src="/assets/disenos/diseno3/mis_xv.png" alt="mis quinceaños">
-            </div>
+            <div class="flex flex-col items-center justify-around h-screen">
 
-            <div class="flex flex-col items-center justify-center gap-3">
-              <strong class="font-dancing text-4xl text-white text-center">20 / NOV / 2024</strong>
-              <img class="animate__animated animate__fadeInDown animate__infinite animate__slow" src="/assets/disenos/diseno3/flecha.png" alt="">
-              <!-- <img src="/assets/disenos/diseno1/flecha-abajo.gif" alt=""> -->
-            </div>
+              <img class="corona" src="/assets/disenos/diseno3/titulo.png" alt="Icono corona">
 
-          </div>
-
-
-        </div>
-
-      </div>
-
-      <div class=" flex flex-col py-10 px-3 gap-16 overflow-hidden">
-
-
-        <div class="nuestra-boda flex flex-col justify-center items-center gap-5 py-20">
-          <h1 class="nuestra-boda font-kalam text-5xl">MIS XV ANOS</h1>
-          <p class="text-lg text-center text-[#1E293B]">Hoy empiezas una etapa maravillosa en tu vida.</p>
-        </div>
-
-
-
-
-
-
-
-
-        <div class="nuestros-padres flex flex-col justify-center items-center gap-8 py-20 overflow-hidden">
-
-          <h2 class="text-5xl">Nuestros Padres</h2>
-
-          <div class="flex gap-8">
-            <div class="padres flex flex-col items-center justify-center gap-5">
-              <img class="rounded-full" src="/assets/disenos/diseno1/padres1.png" alt="" loading="lazy">
-              <strong class="">Novio</strong>
-              <ul class="text-lg text-center text-[#1E293B]">
-                <li>Josefína Ortiz</li>
-                <li>Y</li>
-                <li>Pedro Cervantes</li>
-              </ul>
-            </div>
-            <div class="padres flex flex-col items-center justify-center gap-5">
-              <img class="rounded-full" src="/assets/disenos/diseno1/padres2.png" alt="" loading="lazy">
-              <strong class="">Novia</strong>
-              <ul class="text-lg text-center text-[#1E293B]">
-                <li>Rocío Velázquez</li>
-                <li>Y</li>
-                <li>Miguel Ángel Pérez</li>
-
-              </ul>
-            </div>
-          </div>
-
-
-
-        </div>
-
-      </div>
-
-      <div
-        class="fecha-timer bg-cover py-20 my-10 rounded-3xl w-11/12 mx-auto" style="background-image: url(/assets/disenos/diseno3/tiempo.png);">
-
-
-        <div class="flex flex-col items-center justify-center gap-10">
-          <strong class="text-5xl text-[#ff66c4]">20 Noviembre 2024</strong>
-          <p class="text-2xl text-white">Faltan</p>
-
-          <div class="flex gap-6">
-            <div class="">
-              <div class="flex items-center justify-center rounded-full bg-[#ff66c4] text-white w-16 h-16">
-                <p class="font-bold text-xl">24</p>
+              <div class="overflow-hidden">
+                <img class="title" src="/assets/disenos/diseno3/mis_xv.png" alt="mis quinceaños">
               </div>
-              <p class="text-center font-bold text-white">Meses</p>
-            </div>
-            <div class="">
-              <div class="flex items-center justify-center rounded-full bg-[#ff66c4] text-white w-16 h-16">
-                <p class="font-bold text-xl">24</p>
+
+              <div class="flex flex-col items-center justify-center gap-3">
+                <strong class="font-dancing text-4xl text-white text-center">20 / NOV / 2024</strong>
+                <img class="animate__animated animate__fadeInDown animate__infinite animate__slow" src="/assets/disenos/diseno3/flecha.png" alt="">
+                <!-- <img src="/assets/disenos/diseno1/flecha-abajo.gif" alt=""> -->
               </div>
-              <p class="text-center font-bold text-white">Días</p>
+
             </div>
-            <div class="">
-              <div class="flex items-center justify-center rounded-full bg-[#ff66c4] text-white w-16 h-16">
-                <p class="font-bold text-xl">24</p>
+
+
+          </div>
+
+        </div>
+
+        <div class=" flex flex-col py-10 px-3 gap-16 overflow-hidden">
+
+
+          <div class="nuestra-boda flex flex-col justify-center items-center gap-5 py-20">
+            <h1 class="nuestra-boda font-kalam text-5xl">MIS XV ANOS</h1>
+            <p class="text-lg text-center text-[#1E293B]">Hoy empiezas una etapa maravillosa en tu vida.</p>
+          </div>
+
+          <div class="nuestros-padres flex flex-col justify-center items-center gap-8 py-20 overflow-hidden">
+
+            <h2 class="text-5xl">Nuestros Padres</h2>
+
+            <div class="flex gap-8">
+              <div class="padres flex flex-col items-center justify-center gap-5">
+                <img class="rounded-full" src="/assets/disenos/diseno1/padres1.png" alt="" loading="lazy">
+                <strong class="">Novio</strong>
+                <ul class="text-lg text-center text-[#1E293B]">
+                  <li>Josefína Ortiz</li>
+                  <li>Y</li>
+                  <li>Pedro Cervantes</li>
+                </ul>
               </div>
-              <p class="text-center font-bold text-white">Hrs</p>
-            </div>
-            <div class="">
-              <div class="flex items-center justify-center rounded-full bg-[#ff66c4] text-white w-16 h-16">
-                <p class="font-bold text-xl">24</p>
+              <div class="padres flex flex-col items-center justify-center gap-5">
+                <img class="rounded-full" src="/assets/disenos/diseno1/padres2.png" alt="" loading="lazy">
+                <strong class="">Novia</strong>
+                <ul class="text-lg text-center text-[#1E293B]">
+                  <li>Rocío Velázquez</li>
+                  <li>Y</li>
+                  <li>Miguel Ángel Pérez</li>
+
+                </ul>
               </div>
-              <p class="text-center font-bold text-white">Seg</p>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+        <div
+          class="fecha-timer bg-cover py-20 my-10 rounded-3xl w-11/12 mx-auto" style="background-image: url(/assets/disenos/diseno3/tiempo.png);">
+
+
+          <div class="flex flex-col items-center justify-center gap-10">
+            <strong class="text-5xl text-[#ff66c4]">20 Noviembre 2024</strong>
+            <p class="text-2xl text-white">Faltan</p>
+
+            <div class="flex gap-6">
+              <div class="">
+                <div class="flex items-center justify-center rounded-full bg-[#ff66c4] text-white w-16 h-16">
+                  <p class="font-bold text-xl">24</p>
+                </div>
+                <p class="text-center font-bold text-white">Meses</p>
+              </div>
+              <div class="">
+                <div class="flex items-center justify-center rounded-full bg-[#ff66c4] text-white w-16 h-16">
+                  <p class="font-bold text-xl">24</p>
+                </div>
+                <p class="text-center font-bold text-white">Días</p>
+              </div>
+              <div class="">
+                <div class="flex items-center justify-center rounded-full bg-[#ff66c4] text-white w-16 h-16">
+                  <p class="font-bold text-xl">24</p>
+                </div>
+                <p class="text-center font-bold text-white">Hrs</p>
+              </div>
+              <div class="">
+                <div class="flex items-center justify-center rounded-full bg-[#ff66c4] text-white w-16 h-16">
+                  <p class="font-bold text-xl">24</p>
+                </div>
+                <p class="text-center font-bold text-white">Seg</p>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+        <div class="ceremonia flex flex-col items-center justify-center py-20 gap-5 overflow-hidden">
+
+
+          <h2 class="text-5xl">Ceremonia</h2>
+          <div class="flex flex-col justify-center items-center gap-3">
+            <img class="reloj w-28" src="/assets/disenos/diseno3/reloj.png" alt="" loading="lazy">
+            <strong>6:00 PM</strong>
+            <p class="text-center">
+              Iglesia La Cañita
+              Av Miguel Hidalgo, Centro, 52000 Lerma de Villada, Méx.
+            </p>
+          </div>
+          <iframe class="w-11/12 h-96 rounded-3xl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.0271525851235!2d-103.42165292387737!3d20.668474300053866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9b015c62c7%3A0xc8e5ccdb49aa6d6c!2sLa%20Terraza%20Clouthier!5e0!3m2!1ses-419!2smx!4v1713380021197!5m2!1ses-419!2smx"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+
+          <div class="galery grid grid-cols-2 gap-4 px-6">
+            <img class="w-full h-full rounded-tl-3xl" src="/assets/disenos/diseno3/eventoxv3.png" loading="lazy" alt="">
+            <img class="w-full h-full rounded-tr-3xl" src="/assets/disenos/diseno3/eventoxv3.png" loading="lazy" alt="">
+            <div class="col-span-2">
+              <img class="w-full h-full rounded-b-3xl" src="/assets/disenos/diseno1/mono.png" loading="lazy" alt="">
             </div>
           </div>
 
         </div>
 
+        <hr>
+
+        <div class="evento flex flex-col items-center justify-center py-20 gap-10 overflow-hidden">
 
 
-      </div>
-
-      <div class="ceremonia flex flex-col items-center justify-center py-20 gap-5 overflow-hidden">
-
-
-        <h2 class="text-5xl">Ceremonia</h2>
-        <div class="flex flex-col justify-center items-center gap-3">
-          <img class="reloj w-28" src="/assets/disenos/diseno3/reloj.png" alt="" loading="lazy">
-          <strong>6:00 PM</strong>
-          <p class="text-center">
-            Iglesia La Cañita
-            Av Miguel Hidalgo, Centro, 52000 Lerma de Villada, Méx.
-          </p>
-        </div>
-        <iframe class="w-11/12 h-96 rounded-3xl"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.0271525851235!2d-103.42165292387737!3d20.668474300053866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9b015c62c7%3A0xc8e5ccdb49aa6d6c!2sLa%20Terraza%20Clouthier!5e0!3m2!1ses-419!2smx!4v1713380021197!5m2!1ses-419!2smx"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-        <div class="galery grid grid-cols-2 gap-4 px-6">
-          <img class="w-full h-full rounded-tl-3xl" src="/assets/disenos/diseno3/eventoxv3.png" loading="lazy" alt="">
-          <img class="w-full h-full rounded-tr-3xl" src="/assets/disenos/diseno3/eventoxv3.png" loading="lazy" alt="">
-          <div class="col-span-2">
-            <img class="w-full h-full rounded-b-3xl" src="/assets/disenos/diseno1/mono.png" loading="lazy" alt="">
+          <h2 class="text-5xl">Salon de eventos</h2>
+          <div class="flex flex-col justify-center items-center gap-3">
+            <img class="reloj w-28" src="/assets/disenos/diseno3/reloj.svg" alt="Reloj" loading="lazy">
+            <strong>6:00 PM</strong>
+            <p class="text-center">
+              Iglesia La Cañita
+              Av Miguel Hidalgo, Centro, 52000 Lerma de Villada, Méx.
+            </p>
           </div>
-        </div>
+          <iframe class="w-11/12 h-96 rounded-3xl"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.0271525851235!2d-103.42165292387737!3d20.668474300053866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9b015c62c7%3A0xc8e5ccdb49aa6d6c!2sLa%20Terraza%20Clouthier!5e0!3m2!1ses-419!2smx!4v1713380021197!5m2!1ses-419!2smx"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
 
-      </div>
-
-      <hr>
-
-      <div class="evento flex flex-col items-center justify-center py-20 gap-10 overflow-hidden">
-
-
-        <h2 class="text-5xl">Salon de eventos</h2>
-        <div class="flex flex-col justify-center items-center gap-3">
-          <img class="reloj w-28" src="/assets/disenos/diseno3/reloj.svg" alt="Reloj" loading="lazy">
-          <strong>6:00 PM</strong>
-          <p class="text-center">
-            Iglesia La Cañita
-            Av Miguel Hidalgo, Centro, 52000 Lerma de Villada, Méx.
-          </p>
-        </div>
-        <iframe class="w-11/12 h-96 rounded-3xl"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.0271525851235!2d-103.42165292387737!3d20.668474300053866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae9b015c62c7%3A0xc8e5ccdb49aa6d6c!2sLa%20Terraza%20Clouthier!5e0!3m2!1ses-419!2smx!4v1713380021197!5m2!1ses-419!2smx"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-        <div class="galery grid grid-cols-2 gap-4 px-6">
-          <div class="col-span-2">
-            <img class="w-full h-full rounded-t-3xl" src="/assets/disenos/diseno3/eventoxv.png" loading="lazy" alt="">
-          </div>
-          <img class="w-full h-full rounded-bl-3xl" src="/assets/disenos/diseno3/eventoxv1.png" loading="lazy" alt="">
-          <img class="w-full h-full rounded-br-3xl" src="/assets/disenos/diseno3/eventoxv2.png" loading="lazy" alt="">
-        </div>
-
-      </div>
-
-
-      <hr class="border-slate-300">
-
-      <div class="generales flex flex-col justify-center items-center py-20 gap-10 overflow-hidden">
-
-        <img class="icono-all w-40 h-40" src="/assets/disenos/diseno3/all.svg" alt="Caja de regalo">
-        <h2 class="text-5xl text-center">Generales del Evento</h2>
-
-        <div class="flex text-center gap-5">
-          <div class="rules flex flex-col items-center justify-center">
-            <img class="w-40 h-40" src="/assets/disenos/diseno3/vestimenta-formal.svg" alt="Vestimenta formal">
-            <p class="text-lg font-semibold">Vestimenta Formal</p>
-          </div>
-          <div class="rules flex flex-col items-center justify-center">
-            <img class="w-40 h-40" src="/assets/disenos/diseno3/no-ninos.svg" alt="No niños">
-            <p class="text-lg font-semibold">No Niños</p>
-          </div>
-          <div class="rules flex flex-col items-center justify-center">
-            <img class="w-40 h-40" src="/assets/disenos/diseno3/tema.svg" alt="Sombrero norteño">
-            <p class="text-lg font-semibold">Tematica Vaquera</p>
-          </div>
-        </div>
-
-
-      </div>
-
-      <hr class="border-slate-300">
-
-      <div class="regalos flex flex-col items-center justify-center py-20 gap-10 overflow-hidden">
-
-        <img class="reg-img w-40 h-40" src="/assets/disenos/diseno3/regalo.svg" alt="Caja de regalo">
-        <h2 class="text-5xl">Mesa de Regalos</h2>
-        <p class="deseo text-center text-[#1E293B]">Si deseas hacer un regalo, puedes hacerlo a través de nuestra lista
-          de
-          regalos.</p>
-        <div class="marcas-regalo flex gap-10">
-
-          <div class="items flex flex-col justify-center items-center">
-            <img src="/assets/disenos/diseno1/liverpool.png" alt="">
-            <p class="text-center">Número de Evento: 000000</p>
-            <div class="btn p-5 rounded-3xl bg-[#FFCBA7] text-center">Ver mesa de regalos</div>
-          </div>
-
-          <div class="items flex flex-col justify-center items-center">
-            <img src="/assets/disenos/diseno1/amazon.png" alt="">
-            <p class="text-center">Número de Evento: 000000</p>
-            <div class="btn p-5 rounded-3xl bg-[#FFCBA7] text-center">Ver mesa de regalos</div>
+          <div class="galery grid grid-cols-2 gap-4 px-6">
+            <div class="col-span-2">
+              <img class="w-full h-full rounded-t-3xl" src="/assets/disenos/diseno3/eventoxv.png" loading="lazy" alt="">
+            </div>
+            <img class="w-full h-full rounded-bl-3xl" src="/assets/disenos/diseno3/eventoxv1.png" loading="lazy" alt="">
+            <img class="w-full h-full rounded-br-3xl" src="/assets/disenos/diseno3/eventoxv2.png" loading="lazy" alt="">
           </div>
 
         </div>
 
 
-      </div>
+        <hr class="border-slate-300">
 
-      <hr class="border-slate-300">
+        <div class="generales flex flex-col justify-center items-center py-20 gap-10 overflow-hidden">
 
-      <div class="galeria flex flex-col items-center justify-center py-20 gap-5 px-4 overflow-hidden">
+          <img class="icono-all w-40 h-40" src="/assets/disenos/diseno3/all.svg" alt="Caja de regalo">
+          <h2 class="text-5xl text-center">Generales del Evento</h2>
 
-        <img class="w-40 h-40" src="/assets/disenos/diseno3/camara.svg" alt="Camara fotografica">
+          <div class="flex text-center gap-5">
+            <div class="rules flex flex-col items-center justify-center">
+              <img class="w-40 h-40" src="/assets/disenos/diseno3/vestimenta-formal.svg" alt="Vestimenta formal">
+              <p class="text-lg font-semibold">Vestimenta Formal</p>
+            </div>
+            <div class="rules flex flex-col items-center justify-center">
+              <img class="w-40 h-40" src="/assets/disenos/diseno3/no-ninos.svg" alt="No niños">
+              <p class="text-lg font-semibold">No Niños</p>
+            </div>
+            <div class="rules flex flex-col items-center justify-center">
+              <img class="w-40 h-40" src="/assets/disenos/diseno3/tema.svg" alt="Sombrero norteño">
+              <p class="text-lg font-semibold">Tematica Vaquera</p>
+            </div>
+          </div>
 
-        <h2 class="text-5xl">Galería</h2>
-        <div class="img-galery grid grid-cols-3 gap-4">
-          <img class="w-full h-full rounded-tl-3xl" src="/assets/disenos/diseno3/quinceanera1.png" loading="lazy" alt="Foto de quinceañera">
-          <img class="w-full h-full" src="/assets/disenos/diseno3/quinceanera2.png" loading="lazy" alt="Foto de quinceañera">
-          <img class="w-full h-full rounded-tr-3xl" src="/assets/disenos/diseno3/quinceanera3.png" loading="lazy" alt="Foto de quinceañera">
-          <img class="w-full h-full rounded-bl-3xl" src="/assets/disenos/diseno3/quinceanera4.png" loading="lazy" alt="Foto de quinceañera">
-          <img class="w-full h-full" src="/assets/disenos/diseno3/quinceanera5.png" loading="lazy" alt="Foto de quinceañera">
-          <img class="w-full h-full rounded-br-3xl" src="/assets/disenos/diseno3/quinceanera6.png" loading="lazy" alt="Foto de quinceañera">
+
         </div>
 
+        <hr class="border-slate-300">
 
+        <Regalos color="#ff66c4">
+
+        <hr class="border-slate-300">
+
+        <Galeria imagenes={img} color="#ff66c4" />
+
+        <!-- <div class="galeria flex flex-col items-center justify-center py-20 gap-5 px-4 overflow-hidden">
+
+          <img class="w-40 h-40" src="/assets/disenos/diseno3/camara.svg" alt="Camara fotografica">
+
+          <h2 class="text-5xl">Galería</h2>
+          <div class="img-galery grid grid-cols-3 gap-4">
+            <img class="w-full h-full rounded-tl-3xl" src="/assets/disenos/diseno3/quinceanera1.png" loading="lazy" alt="Foto de quinceañera">
+            <img class="w-full h-full" src="/assets/disenos/diseno3/quinceanera2.png" loading="lazy" alt="Foto de quinceañera">
+            <img class="w-full h-full rounded-tr-3xl" src="/assets/disenos/diseno3/quinceanera3.png" loading="lazy" alt="Foto de quinceañera">
+            <img class="w-full h-full rounded-bl-3xl" src="/assets/disenos/diseno3/quinceanera4.png" loading="lazy" alt="Foto de quinceañera">
+            <img class="w-full h-full" src="/assets/disenos/diseno3/quinceanera5.png" loading="lazy" alt="Foto de quinceañera">
+            <img class="w-full h-full rounded-br-3xl" src="/assets/disenos/diseno3/quinceanera6.png" loading="lazy" alt="Foto de quinceañera">
+          </div>
+
+
+        </div> -->
+
+        <hr class="border-slate-300">
+
+        <Asistencia fecha="Agosto de 2024" colorh2="#ff66c4" />
+
+        <app-footer />
       </div>
-
-
-      <hr class="border-slate-300">
-
-      <div class="confirmar flex flex-col items-center justify-center py-20 gap-5 overflow-hidden">
-
-        <img class="w-40 h-40" src="/assets/disenos/diseno3/check.svg" alt="Check de asistencia">
-        <h2 class="text-5xl text-center">Confirmar Asistencia</h2>
-        <p class="text-center text-[#1E293B]">Por favor confirma tu asistencia antes del 20 de Agosto de 2024</p>
-        <div class="flex gap-5">
-          <button class="bg-[#FFCBA7] text-white px-5 py-2 rounded-full">Confirmar</button>
-        </div>
-
-      </div>
-
-      <app-footer />
-    </div>
-</div>
+  </div>
+</LayoutDiseno>
